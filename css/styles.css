@@ -1,0 +1,170 @@
+/* comentario css */
+/* aplico reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* index.html */
+
+/* propiedades del padre */
+
+.contenedorInicio{
+    height: 100vh;
+    display: grid;
+
+    grid-template-columns: auto ;
+    grid-template-rows: 0.5fr 1.5fr 2fr 0.2fr;
+
+    grid-template-areas: 
+                    "header header "
+                    "main main"
+                    "section-uno section-dos"
+                    "footer footer" ;
+
+    
+}
+
+/* propiedades de los hijos */
+
+header{
+    background-color: #242614;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .imgLogo{
+    display: flex;
+    margin: 5px;
+}
+
+header .menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .menu ul li{
+    display: inline-block;
+    background-color:#CAD959 ;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px #64732F;
+    margin: 3px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+} 
+
+
+main{
+    background-color: #CAD959;
+    grid-area: main;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    font-size: 50px;
+    text-shadow:2px 2px #242614 ;
+}
+
+main h2{
+    font-size: 30px;
+    margin: 5px;
+}
+
+main .parrafoUno{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+main .parrafoDos{
+    font-size: 24px;
+}
+
+
+
+.sectionUno{
+    background-color: #64732F;
+    grid-area: section-uno;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Rubik Distressed', cursive;
+    padding: 5px;
+}
+.sectionUno p{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.sectionUno p,img{
+    width: 95%;
+}
+
+.sectionDos{
+    background-color: #64732F;
+    grid-area: section-dos;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Rubik Distressed', cursive;
+    padding: 10px;
+}
+
+.sectionDos p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.sectionDos p,iframe{
+    width: 95%;
+}
+
+
+
+
+footer{
+    
+    background-color: #242614;
+    grid-area: footer;
+    text-align: center;
+   color: antiquewhite;
+}
+
+
+
+/* mediaqueries html Inicio */
+
+@media screen and (max-width:600px){
+    .contenedorInicio{
+        height: 100vh;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                        "header"
+                        "main"
+                        "section-uno"
+                        "section-dos"
+                        "footer" ;
+                        
+    }
+    .sectionDos{
+        padding: 10px;
+    }
+}
+
+
+
+/* contacto html */
+
+
+
+
+
