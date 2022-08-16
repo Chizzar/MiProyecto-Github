@@ -47,6 +47,7 @@ header .menu{
 }
 
 header .menu ul li{
+    
     display: inline-block;
     background-color:#CAD959 ;
     font-size: 20px;
@@ -57,6 +58,15 @@ header .menu ul li{
     border-radius: 20px;
     flex-wrap: wrap;
 } 
+
+/* animaciones */
+
+header .menu ul li:hover{
+    background-color: darkgreen;
+    transform: scale(1.2);
+    box-shadow: 2px 2px 10px darkolivegreen;
+    
+}
 
 
 /* menu de los demas html */
