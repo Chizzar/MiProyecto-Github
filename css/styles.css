@@ -25,6 +25,10 @@
     
 }
 
+
+
+
+
 /* propiedades de los hijos */
 
 header{
@@ -267,7 +271,82 @@ main .imgNutricion{
 }
 
 
+/* HTML contacto con Bootstrap */
 
+.bg-menu-contacto{
+    background-color: #64732F;
+}
+
+main .iconos{
+    font-size: 60px;
+    display: flex;
+
+    justify-content:space-around;
+    padding: 1px;
+    margin: 1px;
+}
+
+
+
+
+
+
+
+/* header Inicio con bootstrap menu hamburguesa */
+
+.header-menu{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu-nav nav ul li{
+    display: inline-block;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    background-color:#CAD959 ;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px #64732F;
+    margin: 3px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+header .imgLogo{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* menu hamburguesa Tienda */
+
+.navbar-dos{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.navbar-dos div ul li{
+    display: inline-block;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    background-color:#CAD959 ;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px #64732F;
+    margin: 3px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+header nav button span{
+    background-color: #CAD959;
+    color: #64732F;
+}
 
 
 

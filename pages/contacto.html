@@ -4,53 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
+    <!-- LINK DE BOOTSTRAP -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- link de mi css -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto</title>
 </head>
 <body>
-    <div class="contenedorContacto">
-    <header class="headerDos">
-            <nav class="menuDos">
-                <ul>
-                    <li class="caja">
-                    <a href="../index.html">Volver al inicio</a>
-                    </li>
-                    <li class="caja">
-                    <a href="../pages/nutricion.html">Ir a Nutricion</a>
-                    </li>
-                    <li class="caja">
-                    <a href="../pages/tienda.html">Ir a Tienda</a>
-                    </li>
-                 <li class="caja">
-                    <a href="../pages/entrenamiento.html">Entrenamiento</a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="container-fluid">
+        <div class="menu-contacto row">
+
+            <nav class=" col-12 col-sm-12 col-md-12 navbar navbar-expand-lg bg-menu-contacto">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../pages/contacto.html">Contacto
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.coderhouse.com" target="_blank">Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#mapa">Mapa</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Opciones
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                          <li><a class="dropdown-item" href="../pages/entrenamiento.html">Entrenamiento</a></li>
+                          <li><a class="dropdown-item" href="../pages/tienda.html">Tienda</a></li>
+                          <li><a class="dropdown-item" href="../pages/nutricion.html">Nutricion</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
     </header>
 
-    <main>
-        <h1 class="contacto"> Hey! Que placer tenerte aqui! En que podemos ayudarte? </h1>
-        <p class="parrafoContacto">
-            Queremos conocerte! saber mas de ti! Debajo te dejamos un formulario para que completes con tus datos y nos dejes todas tus dudas y/o consultas!
-            Se parte de nuestra comunidad!
-        </p>
-
-        <div class="Nosotros">
-            <ul>
-                <li>Gimnasio Ciem</li>
+    <main class="container-fluid">
+        <div class="row">
+            <ul class="col-6 col-md-6 col-sm-6 col-lg-6 p-5">
+                <h1>GIMNASIO CIEM</h1>
                 <li>Numero de tel.:+543492123456</li>
                 <li>Email: gimnasioCiem@gmail.com</li>
                 <li>Direccion: Rivadavia 200</li>
                 <li>Argentina, Santa Fe, Rafaela</li>
             </ul>
-        </div>
+            <img src="../img/img-contacto.png" alt="imagen de contacto" class="col-6 col-md-6 col-sm-6 col-lg-6 p-5">
 
-        <!--formulario-->
-        
-            <form class="formulario">
+            <!--formulario-->
+            <form class="col-12 col-md-8 col-sm-6 text-center p-5">
                 <fieldset>
-                    <legend>Formulario de contacto</legend>
+                    <legend>FORMULARIO DE CONTACTO</legend>
                 <div>
                     <label for="nombre">
                        completa tu nombre
@@ -85,32 +99,56 @@
                 </div>
                 </fieldset>
             </form>
-            
-                    <img src="../img/img-contacto.png" alt="imagen de contacto" class="imgContacto">
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.828276856271!2d-61.49755614883103!3d-31.253176795413538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae39edb4621b%3A0xa9d2ca3f5eaa3ad5!2sGimnasio%20Ciem!5e0!3m2!1ses-419!2sar!4v1658886268887!5m2!1ses-419!2sar" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
+            <div class="col-12 col-lg-8 col-md-6 col-sm-4 p-5">
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.828276856271!2d-61.49755614883103!3d-31.253176795413538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae39edb4621b%3A0xa9d2ca3f5eaa3ad5!2sGimnasio%20Ciem!5e0!3m2!1ses-419!2sar!4v1658886268887!5m2!1ses-419!2sar" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h2 class="col-12 ">Siguenos en nuestras redes sociales y no te pierdas de nuestro contenido exclusivo!</h2>
+            <div class="iconos col-12 p-2">
+            <i class="bi bi-facebook col-3 col-md-2 col-sm-1"></i>
+            <i class="bi bi-whatsapp col-3 col-md-2 col-sm-1"></i>
+            <i class="bi bi-messenger col-3 col-md-2 col-sm-1"></i>
+            <i class="bi bi-twitter col-3 col-md-2 col-sm-1"></i>
+        </div>
+        </div>
     </main>
 
-    
-    <section class="redesSociales">
-
-        <h2>Siguenos en nuestras redes sociales y no te pierdas de nuestro contenido exclusivo!</h2>
-
-
-                <img src="../img/fbk.black.png" alt="" class="fbkImg">
-            
-                <img src="../img/insta.black.png" alt="" class="instagramImg">
-            
-                <img src="../img/twitter.black.png" alt="" class="twitterImg">
-
-                <img src="../img/wapp.black.png" alt="" class="wapImg">
-    </section>
-
-    <footer>
-        <h3> Todos los derechos reservados </h3>
+    <footer class="container-fluid">
+        <div class="row">
+            <h3 class="col-12">Todos los derechos reservados</h3>
+        </div>
     </footer>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
