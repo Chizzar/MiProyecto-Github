@@ -44,24 +44,36 @@
         </div>
         <h2> Comprar ahora! <h2>
         <div>
-            <img src="../img/comprar.png" alt="carrito de compras">
+            <img src="../img/comprarYa.png" alt="carrito de compras">
         </div>
     </main>
 
     <section class="h2Productos">
         <h2>Trabajamos con productos lideres en el mercado</h2>
     </section>
-
+    <!-- carrusel productos-->
     <section class="sectionTienda">
-         <div class="imagenUno">
-            <img src="../img/barritas.webp" alt="">
-        </div>
-        <div class="imagenDos">
-            <img src="../img/bcca.jpg" alt="">
-        </div>
-        <div class="imagenTres">
-            <img src="../img/wheyprotein.jpg" alt="">
-        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/barritas.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/bcca.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/wheyprotein.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         
     </section>
     <footer>

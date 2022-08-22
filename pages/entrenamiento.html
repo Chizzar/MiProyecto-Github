@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- LINK DE BOOTSTRAP -->
+     <!-- LINK DE BOOTSTRAP -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <!-- CSS -->
@@ -38,42 +38,77 @@
         
         
     </header>
-    <main>
+    <main class="main-entrenamiento">
         <h1 class="h1Entrenamiento">Tu cambio comienza aqui!</h1>
         <div class="pEntrenamiento">
             <p>En Ciem tenemos planes especialmente diseñados para ti! planes especiales para mujeres y para hombres. Que esperas!? Vamos a darle con toda!!!</p>
         </div>
 
-        <div  class="imgEntrenamiento">
-            <img src="../img/img-entrenamiento.png" height="800px" width="600px" alt="imagen de entrenamiento">
-        </div>
+        <!-- carrusel bootstrap-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/Fitness-home.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Fitness-press.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Fitness-running.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <h2 class="h2Entrenamiento">Escoje tu actividad favorita</h2>
 
          <!-- tabla de dias y horarios -->
-        <div class="tablaActividades">
-            <table border="3">
-                <tbody>
-                    <tr>
-                        <td class="titulo"> Dias </td>
-                        <td class="titulo"> Lunes </td>
-                        <td class="titulo"> Martes </td>
-                        <td class="titulo"> Miercoles </td>
-                        <td class="titulo"> Jueves </td>
-                        <td class="titulo"> Viernes </td>
-                    </tr>
-                    <tr>
-                        <td class="titulo">Actividad</td>
-                        <td class="titulo">Musculacion</td>
-                        <td class="titulo">Crossfit</td>
-                        <td class="titulo">Running</td>
-                        <td class="titulo">Musculacion</td>
-                        <td class="titulo">Crossfit</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <table class="col-10 col-md-8 col-sm-6 m-5 table-bordered p-5 ">
+                        <thead>
+                            <tr class="encabezado-tabla p-5 m-5 align-center "> 
+                                <th> Actividad </th>
+                                <th> Dias </th>
+                                <th> Horario </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Musculacion </td>
+                                <td> Lunes miercoles y viernes </td>
+                                <td> 8 a 12hs , y 18 a 21hs </td>
+                            </tr>
+                            <tr>
+                                <td> Crossfit </td>
+                                <td> Lunes miercoles y viernes </td>
+                                <td> 12 a 15hs y 19 a 21hs </td>
+                            </tr>
+                            <tr>
+                                <td> Running </td>
+                                <td> Martes y jueves </td>
+                                <td> 8 a 12hs y 17 a 21hs </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+
+                <h2 class="h2-video">Nunca nadie se ha ahogado con su propio sudor!</h2>
+                 
+                    <iframe class="video-entrenamiento" width="560" height="315" src="https://www.youtube.com/embed/P4GB4t8sODU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     </main>
+    
     <footer>
         <h3>Todos los derechos reservados</h3>
     </footer>
