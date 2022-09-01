@@ -4,6 +4,12 @@ $color-header:#242614;
 $color-main: #CAD959;
 $color-section:#64732F;
 $color-footer: #242614;
+@import "base/variables";
+@import "base/mapas";
+@import "base/listas";
+@import "base/mixin";
+@import "base/extend";
+
 /* aplico reset */
 *{
     margin: 0;
@@ -13,6 +19,9 @@ $color-footer: #242614;
 
 
 header{
+    .header-standard{
+        background-color: map-get($map: $standard, $key:bg-standard );
+    }
     background-color: $color-header;
     display: flex;
     align-items: center;
@@ -22,13 +31,14 @@ header{
         margin: 5px;
     }
     
-    .menu,menu-nav{
+    .menu{
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
-    .menu-inicio{
+    .menu-primario{
         display:  flex ;
-        justify-content: center;
+        justify-content:space-between;
         justify-items: center;
         flex-direction: row;
         list-style: none;   
@@ -39,14 +49,44 @@ header{
         margin: 3px;
         border-radius: 20px;
         flex-wrap: wrap;
-        background-color:$color-main ;
+        background-color: nth($colores, 3) ;
     }
+
+    /* menu de los demas html */
+
+    .navbar-dos{
+        @extend %flex;
+    }
+        nav .menu-secundario{
+            .header-premuim{
+                background-color: map-get($map: $premium, $key:bg-premium );
+            }
+            display:  flex ;
+            justify-content: center;
+            justify-items: center;
+            flex-direction: row;
+            list-style: none;   
+            font-size: 1rem;
+            padding: 5px;
+            font-weight: bold;
+            box-shadow: 2px 2px $color-section;
+            margin: 3px;
+            border-radius: 20px;
+            flex-wrap: wrap;
+            background-color:$color-main ;
+
+        }
+    
+
+
 }
 
 main{
     background-color: $color-main;
     h1{
-        font-size: 50px;
+        width:($medida-principal/2) - $medida-secundaria;
+        color: $color-principal;
+        font-size:60px;
         text-shadow:2px 2px $color-header ;
     }
     h2{
@@ -151,9 +191,12 @@ section{
 }
 
 footer{
-    background-color: $color-footer;
+    background-color: nth($colores, 1) ;
     text-align: center;
    color: antiquewhite;
+   div{
+    @include medidas(1024px,30px);
+   }
 }
 
 /* mediaqueries html Inicio */
@@ -171,6 +214,12 @@ footer{
                         
     }
     .sectionDos{
-        padding: 10px;
+        padding: 20px;
     }
 }
+
+
+
+
+
+
