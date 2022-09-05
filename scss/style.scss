@@ -201,7 +201,24 @@ footer{
 
 /* mediaqueries html Inicio */
 
-@media screen and (max-width:600px){
+@media screen and (max-width:480px){
+    .contenedorInicio{
+        height: 100vh;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                        "header"
+                        "main"
+                        "section-uno"
+                        "section-dos"
+                        "footer" ;
+                        
+    }
+    .sectionDos{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:481px) and (min-width:768px){
     .contenedorInicio{
         height: 100vh;
         grid-template-rows: auto;
