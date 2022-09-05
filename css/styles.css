@@ -15,12 +15,12 @@ header {
   background-color: #242614;
   display: flex;
   align-items: center;
-  
   /* menu de los demas html */ }
   header .header-standard {
     background-color: #242614; }
   header .imgLogo {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     margin: 5px; }
   header .menu {
@@ -43,8 +43,8 @@ header {
     background-color: #CAD959; }
   header nav .menu-secundario {
     display: flex;
-    justify-content: center;
-    justify-items: center;
+    justify-content: flex-end;
+    justify-items: flex-end;
     flex-direction: row;
     list-style: none;
     font-size: 1rem;
@@ -62,7 +62,8 @@ main {
     width: 0px;
     color: chocolate;
     font-size: 60px;
-    text-shadow: 2px 2px #242614; }
+    text-shadow: 2px 2px #242614;
+    text-align: center; }
   main h2 {
     font-size: 30px;
     margin: 5px; }
@@ -92,13 +93,17 @@ section {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family: 'Rubik Distressed', cursive;
     padding: 5px; }
   section p {
+    text-align: center;
     margin-top: 20px;
-    font-size: 30px; }
-  section p, section img {
-    width: 95%; }
+    font-size: 30px;
+    font-family: 'Rubik Distressed', cursive; }
+  section img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%; }
   section img {
     -webkit-animation: puff-in-center 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) both;
     animation: puff-in-center 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
@@ -155,14 +160,34 @@ footer {
     height: 30px; }
 
 /* mediaqueries html Inicio */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .contenedorInicio {
     height: 100vh;
     grid-template-rows: auto;
-    grid-template-areas: "header"
- "main"
- "section-uno"
- "section-dos"
- "footer"; }
+    grid-template-areas: "header" "main" "section-uno" "section-dos" "footer"; }
   .sectionDos {
     padding: 20px; } }
+
+@media screen and (max-width: 481px) and (min-width: 768px) {
+  .contenedorInicio {
+    height: 100vh;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "main" "section-uno" "section-dos" "footer"; }
+  .sectionDos {
+    padding: 20px; } }
+
+/* html entrenamiento */
+header nav .menu-secundario ul li {
+  display: inline-block;
+  margin: 3px;
+  padding: 5px;
+  border-radius: 20px #242614;
+  box-shadow: #242614 10px; }
+
+main .main-entrenamiento .h1Entrenamiento {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+main .main-entrenamiento .pEntrenamiento {
+  font-size: 30px; }

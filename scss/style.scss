@@ -27,6 +27,7 @@ header{
     align-items: center;
     .imgLogo{
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
         margin: 5px;
     }
@@ -62,8 +63,8 @@ header{
                 background-color: map-get($map: $premium, $key:bg-premium );
             }
             display:  flex ;
-            justify-content: center;
-            justify-items: center;
+            justify-content: flex-end;
+            justify-items: flex-end;
             flex-direction: row;
             list-style: none;   
             font-size: 1rem;
@@ -88,6 +89,7 @@ main{
         color: $color-principal;
         font-size:60px;
         text-shadow:2px 2px $color-header ;
+        text-align: center;
     }
     h2{
         font-size: 30px;
@@ -111,15 +113,20 @@ section{
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        font-family: 'Rubik Distressed', cursive;
+       
         padding: 5px;
     }
      p{
+        text-align: center;
         margin-top: 20px;
         font-size: 30px;
+        font-family: 'Rubik Distressed', cursive;
     }
-    p,img{
-        width: 95%;
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
     }
     img {
         -webkit-animation: puff-in-center 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
@@ -233,6 +240,36 @@ footer{
     .sectionDos{
         padding: 20px;
     }
+}
+
+/* html entrenamiento */
+
+header nav .menu-secundario ul li{
+    display:inline-block;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 20px #242614;
+    box-shadow: #242614 10px;
+}
+
+main .main-entrenamiento{
+    .h1Entrenamiento{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pEntrenamiento{
+        font-size: 30px;
+    }
+
+    
+
+
+
+
+
+
 }
 
 
