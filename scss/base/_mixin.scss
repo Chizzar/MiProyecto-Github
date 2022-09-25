@@ -1,0 +1,6 @@
+// media queries
+@mixin movil($medida:600px){
+    @media screen and (max-width: $medida){   
+        @content
+    }
+}

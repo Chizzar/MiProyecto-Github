@@ -39,12 +39,14 @@
     </header>
     <main>
         <h1>BIENVENIDO A NUESTRA TIENDA</h1>
-        <div class="imgTienda">
-            <img src="../img/tienda.png" height="300px" width="300px" alt="imagen de tienda">
+        <div class="imgTienda d-flex m-2 p-2 ">
+            <img src="../img/tienda.png" alt="imagen de tienda">
         </div>
-        <h2> Comprar ahora! <h2>
+        <h2 class="comprarAhora"> Comprar ahora! <h2>
         <div>
-            <img src="../img/comprarYa.png" alt="carrito de compras">
+          <a href="https://www.mercadopago.com.ar/" target="_blank">
+            <img class="comprarYa" src="../img/comprarYa.png" alt="carrito de compras">
+          </a>
         </div>
     </main>
 
@@ -53,16 +55,22 @@
     </section>
     <!-- carrusel productos-->
     <section class="sectionTienda">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls"       class="carousel slide"  data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../img/barritas.webp" class="d-block w-100" alt="...">
+                <a href="https://listado.mercadolibre.com.ar/whey-protein?matt_tool=25756889&matt_word=whey-protein&matt_source=google&matt_campaign_id=11677658575&matt_ad_group_id=113839471619&matt_match_type=e&matt_network=g&matt_device=c&matt_creative=498198667647&matt_keyword=whey%20protein&matt_ad_position=&matt_ad_type=&matt_merchant_id=&matt_product_id=&matt_product_partition_id=&matt_target_id=aud-1427805167451:kwd-25525171" target="_blank">
+                <img src="../img/barritas.webp" class="d-block w-35" alt="...">
+                </a>  
               </div>
               <div class="carousel-item">
-                <img src="../img/bcca.jpg" class="d-block w-100" alt="...">
+                <a href="https://listado.mercadolibre.com.ar/whey-protein?matt_tool=25756889&matt_word=whey-protein&matt_source=google&matt_campaign_id=11677658575&matt_ad_group_id=113839471619&matt_match_type=e&matt_network=g&matt_device=c&matt_creative=498198667647&matt_keyword=whey%20protein&matt_ad_position=&matt_ad_type=&matt_merchant_id=&matt_product_id=&matt_product_partition_id=&matt_target_id=aud-1427805167451:kwd-25525171" target="_blank">
+                <img src="../img/bcca.jpg" class="d-block w-35" alt="...">
+              </a>
               </div>
               <div class="carousel-item">
-                <img src="../img/wheyprotein.jpg" class="d-block w-100" alt="...">
+                <a href="https://listado.mercadolibre.com.ar/whey-protein?matt_tool=25756889&matt_word=whey-protein&matt_source=google&matt_campaign_id=11677658575&matt_ad_group_id=113839471619&matt_match_type=e&matt_network=g&matt_device=c&matt_creative=498198667647&matt_keyword=whey%20protein&matt_ad_position=&matt_ad_type=&matt_merchant_id=&matt_product_id=&matt_product_partition_id=&matt_target_id=aud-1427805167451:kwd-25525171" target="_blank">
+                <img src="../img/wheyprotein.jpg" class="d-block w-35" alt="...">
+              </a>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -74,8 +82,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        
-    </section>
+      </section>
     <footer>
         <h3>Todos los derechos reservados</h3>
     </footer>
